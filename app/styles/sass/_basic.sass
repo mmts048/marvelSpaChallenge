@@ -1,0 +1,61 @@
+/****** Generals ******/
+.mt-no-padding
+  padding-left: 0px !important
+  padding-right: 0px !important
+
+.mt-vertical-aling
+  top: 50%
+  transform: translateY(50%)
+
+.mt-margingtop-20
+  margin-top: 20px
+/****** End Generals ******/
+
+/****** Header ******/
+.mt-img-brand
+  padding: 10px
+
+.mt-header
+  background-color: $dak-gray
+
+.mt-search-style
+  color: $dak-gray
+  font-family: 'Muli', sans-serif
+
+@include placeholder()
+  color: $light-gray
+  font-family: 'Muli', sans-serif
+  @extend .mt-search-style
+
+input[type=search]
+  width: 70%
+  height: 50px
+  padding-left: 15px
+  border-radius: 5px
+  padding-right: 15px
+  @extend .mt-search-style
+
+.inner-addon
+  position: relative
+
+.inner-addon .fa
+  padding: 10px
+  color: $light-gray
+  position: absolute
+  pointer-events: none
+
+.right-addon .fa
+  right: 0px
+
+.right-addon input
+  padding-right: 30pX
+
+/****** End Header ******/
+
+/****** Footer ******/
+.mt-footer
+  height: 100px
+  color: $white
+  background-color: $dak-gray
+  font-family: 'Muli', sans-serif
+/****** End Footer ******/

@@ -6,5 +6,76 @@
 /*  Description: Template form Marvel SPA Challenge project. */
 /*  Version: 1.0 */
 /*  License: Copy Right */
+/****** Generals ***** */
+.mt-no-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+.mt-vertical-aling {
+  top: 50%;
+  transform: translateY(50%); }
+
+.mt-margingtop-20 {
+  margin-top: 20px; }
+
+/****** End Generals ***** */
+/****** Header ***** */
+.mt-img-brand {
+  padding: 10px; }
+
+.mt-header {
+  background-color: #2C2828; }
+
+.mt-search-style, input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input[type=search] {
+  color: #2C2828;
+  font-family: "Muli", sans-serif; }
+
+input::-webkit-input-placeholder {
+  color: #B4B5B6;
+  font-family: "Muli", sans-serif; }
+
+input:-moz-placeholder {
+  color: #B4B5B6;
+  font-family: "Muli", sans-serif; }
+
+input::-moz-placeholder {
+  color: #B4B5B6;
+  font-family: "Muli", sans-serif; }
+
+input:-ms-input-placeholder {
+  color: #B4B5B6;
+  font-family: "Muli", sans-serif; }
+
+input[type=search] {
+  width: 70%;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 5px;
+  padding-right: 15px; }
+
+.inner-addon {
+  position: relative; }
+
+.inner-addon .fa {
+  padding: 10px;
+  color: #B4B5B6;
+  position: absolute;
+  pointer-events: none; }
+
+.right-addon .fa {
+  right: 0px; }
+
+.right-addon input {
+  padding-right: 30pX; }
+
+/****** End Header ***** */
+/****** Footer ***** */
+.mt-footer {
+  height: 100px;
+  color: #ffffff;
+  background-color: #2C2828;
+  font-family: "Muli", sans-serif; }
+
+/****** End Footer ***** */
 
 /*# sourceMappingURL=style.css.map */
