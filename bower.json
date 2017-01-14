@@ -1,0 +1,23 @@
+{
+  "name": "marvelSpaChallenge",
+  "description": "A simple app to list Marvel characters.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mmts048/marvelSpaChallenge.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "bootstrap": "^3.2.0",
+    "toastr": "^2.1.2",
+    "angular-translate": "~2.10.0",
+    "angular-translate-loader-static-files": "~2.10.0",
+    "angular-skrollr": "~0.1.5",
+    "skrollr": "~0.6.30",
+    "angular-flowtype": "*",
+    "Flowtype.js": "flowtype#^1.1.0"
+  }
+}
