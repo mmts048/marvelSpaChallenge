@@ -1,4 +1,7 @@
 /****** Generals ******/
+body
+  font-family: 'Muli', sans-serif
+
 .mt-no-padding
   padding-left: 0px !important
   padding-right: 0px !important
@@ -9,6 +12,14 @@
 
 .mt-margingtop-20
   margin-top: 20px
+
+.shadow
+  z-index: 5
+  box-shadow: 0px -1px 14px 6px $grey-shadow
+  -webkit-box-shadow: 0px -1px 14px 6px $grey-shadow
+  -moz-box-shadow: 0px -1px 14px 6px $grey-shadow
+  -ms-box-shadow: 0px -1px 14px 6px $grey-shadow
+  -o-box-shadow: 0px -1px 14px 6px $grey-shadow
 /****** End Generals ******/
 
 /****** Header ******/
@@ -20,11 +31,9 @@
 
 .mt-search-style
   color: $dak-gray
-  font-family: 'Muli', sans-serif
 
 @include placeholder()
   color: $light-gray
-  font-family: 'Muli', sans-serif
   @extend .mt-search-style
 
 input[type=search]
@@ -57,5 +66,115 @@ input[type=search]
   height: 100px
   color: $white
   background-color: $dak-gray
-  font-family: 'Muli', sans-serif
 /****** End Footer ******/
+
+
+/****** List of Characters ******/
+.mt-body-characters
+  background-color: $light-gray-bg
+
+.mt-title
+  font-size: 25px
+  margin: 40px 50px
+
+.mt-title-img
+  top: 35px
+  position: absolute
+
+#filters
+  width: 40%
+  height: 50px
+  margin-top: 35px
+  color: $dak-gray
+  padding-left: 15px
+  border-radius: 5px
+  background-color: $white
+
+select#filters
+  z-index: 5
+  appearance: none
+  white-space: nowrap
+  -moz-appearance: none
+  text-overflow: ellipsis
+  -webkit-appearance: none
+  overflow: hidden !important
+  background-repeat: no-repeat
+  background-position: 97% center
+  background-image: url("../images/btn_arrow_down.png")
+
+.mt-character-info
+  height: 225px
+  padding: 10px
+  margin: 0 0 20px 0
+  background-color: $white
+  p
+    height: 42px
+    font-size: 10px
+    line-height: 1.4
+    overflow: hidden
+    color: $light-gray
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+  h2
+    font-size: 15px
+    color: $dak-gray
+    margin-top: -18px
+    font-weight: bolder
+    text-transform: uppercase
+  h3
+    font-size: 12px
+    color: $titles-gray
+    font-weight: bolder
+
+
+.mt-character-image
+  top:  -20px
+  left: -35px
+  max-width: 150px
+  position: absolute
+  border-radius: 50%
+
+.mt-red-btn
+  border: none
+  color: $white
+  font-size: 10px
+  padding-top: 5px
+  border-radius: 0px
+  padding-bottom: 3px
+  background-color: $red
+  text-transform: uppercase
+
+.mt-comics-info p
+  height: 28px
+  -webkit-line-clamp: 2
+
+.mt-pagination-btn
+  width: 30px
+  margin: 5px
+  height: 30px
+  border: none
+  background-color: $white
+  box-shadow: 0px 0px 4px 1px $light-gray
+  -o-box-shadow: 0px 0px 4px 1px $light-gray
+  -ms-box-shadow: 0px 0px 4px 1px $light-gray
+  -moz-box-shadow: 0px 0px 4px 1px $light-gray
+  -webkit-box-shadow: 0px 0px 4px 1px $light-gray
+
+#btn-previus
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url("../images/btn_arrow_left.png")
+
+#btn-next
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url("../images/btn_arrow_right.png")
+
+#btn-previus.inactive
+  background-image: url("../images/btn_arrow_left_inactive.png")
+
+#btn-next.inactive
+  background-image: url("../images/btn_arrow_right_inactive.png")
+/****** End List of Characters ******/

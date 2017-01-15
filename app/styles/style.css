@@ -7,6 +7,9 @@
 /*  Version: 1.0 */
 /*  License: Copy Right */
 /****** Generals ***** */
+body {
+  font-family: "Muli", sans-serif; }
+
 .mt-no-padding {
   padding-left: 0px !important;
   padding-right: 0px !important; }
@@ -18,6 +21,14 @@
 .mt-margingtop-20 {
   margin-top: 20px; }
 
+.shadow {
+  z-index: 5;
+  box-shadow: 0px -1px 14px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px -1px 14px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -1px 14px 6px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0px -1px 14px 6px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px -1px 14px 6px rgba(0, 0, 0, 0.5); }
+
 /****** End Generals ***** */
 /****** Header ***** */
 .mt-img-brand {
@@ -27,24 +38,19 @@
   background-color: #2C2828; }
 
 .mt-search-style, input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input[type=search] {
-  color: #2C2828;
-  font-family: "Muli", sans-serif; }
+  color: #2C2828; }
 
 input::-webkit-input-placeholder {
-  color: #B4B5B6;
-  font-family: "Muli", sans-serif; }
+  color: #B4B5B6; }
 
 input:-moz-placeholder {
-  color: #B4B5B6;
-  font-family: "Muli", sans-serif; }
+  color: #B4B5B6; }
 
 input::-moz-placeholder {
-  color: #B4B5B6;
-  font-family: "Muli", sans-serif; }
+  color: #B4B5B6; }
 
 input:-ms-input-placeholder {
-  color: #B4B5B6;
-  font-family: "Muli", sans-serif; }
+  color: #B4B5B6; }
 
 input[type=search] {
   width: 70%;
@@ -72,10 +78,118 @@ input[type=search] {
 /****** Footer ***** */
 .mt-footer {
   height: 100px;
-  color: #ffffff;
-  background-color: #2C2828;
-  font-family: "Muli", sans-serif; }
+  color: #FFFFFF;
+  background-color: #2C2828; }
 
 /****** End Footer ***** */
+/****** List of Characters ***** */
+.mt-body-characters {
+  background-color: #F3F4F5; }
+
+.mt-title {
+  font-size: 25px;
+  margin: 40px 50px; }
+
+.mt-title-img {
+  top: 35px;
+  position: absolute; }
+
+#filters {
+  width: 40%;
+  height: 50px;
+  margin-top: 35px;
+  color: #2C2828;
+  padding-left: 15px;
+  border-radius: 5px;
+  background-color: #FFFFFF; }
+
+select#filters {
+  z-index: 5;
+  appearance: none;
+  white-space: nowrap;
+  -moz-appearance: none;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  overflow: hidden !important;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-image: url("../images/btn_arrow_down.png"); }
+
+.mt-character-info {
+  height: 225px;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  background-color: #FFFFFF; }
+  .mt-character-info p {
+    height: 42px;
+    font-size: 10px;
+    line-height: 1.4;
+    overflow: hidden;
+    color: #B4B5B6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical; }
+  .mt-character-info h2 {
+    font-size: 15px;
+    color: #2C2828;
+    margin-top: -18px;
+    font-weight: bolder;
+    text-transform: uppercase; }
+  .mt-character-info h3 {
+    font-size: 12px;
+    color: #7C7574;
+    font-weight: bolder; }
+
+.mt-character-image {
+  top: -20px;
+  left: -35px;
+  max-width: 150px;
+  position: absolute;
+  border-radius: 50%; }
+
+.mt-red-btn {
+  border: none;
+  color: #FFFFFF;
+  font-size: 10px;
+  padding-top: 5px;
+  border-radius: 0px;
+  padding-bottom: 3px;
+  background-color: #E8222D;
+  text-transform: uppercase; }
+
+.mt-comics-info p {
+  height: 28px;
+  -webkit-line-clamp: 2; }
+
+.mt-pagination-btn {
+  width: 30px;
+  margin: 5px;
+  height: 30px;
+  border: none;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 4px 1px #B4B5B6;
+  -o-box-shadow: 0px 0px 4px 1px #B4B5B6;
+  -ms-box-shadow: 0px 0px 4px 1px #B4B5B6;
+  -moz-box-shadow: 0px 0px 4px 1px #B4B5B6;
+  -webkit-box-shadow: 0px 0px 4px 1px #B4B5B6; }
+
+#btn-previus {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/btn_arrow_left.png"); }
+
+#btn-next {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/btn_arrow_right.png"); }
+
+#btn-previus.inactive {
+  background-image: url("../images/btn_arrow_left_inactive.png"); }
+
+#btn-next.inactive {
+  background-image: url("../images/btn_arrow_right_inactive.png"); }
+
+/****** End List of Characters ***** */
 
 /*# sourceMappingURL=style.css.map */
