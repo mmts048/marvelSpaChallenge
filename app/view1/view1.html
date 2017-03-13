@@ -6,9 +6,9 @@
   <div class="col-xs-6">
     <select id="filters" class="pull-right">
       <option value="label">Sort by...</option>
-      <option value="Opt1">Option 1</option>
-      <option value="Opt2">Option 2</option>
-      <option value="Opt3">Option 3</option>
+      <option value="Opt1">Name</option>
+      <option value="Opt2">Description</option>
+      <option value="Opt3">Date Modified</option>
     </select>
   </div>
   <div class="col-xs-12">
@@ -24,7 +24,7 @@
         </div>
         <div class="col-xs-12 mt-no-padding mt-comics-info">
           <h3 ng-if="character.comics.items.length > 0">Related comics</h3>
-          <div class="col-xs-6" ng-repeat="comic in character.comics.items | limitTo:4">
+          <div class="col-xs-6" ng-repeat="comic in character.comics.items | filter:search | limitTo:4 ">
             <p>{{comic.name}}</p>
           </div>
         </div>

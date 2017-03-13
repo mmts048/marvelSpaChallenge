@@ -18,7 +18,7 @@ angular.module('myApp.view1', ['pascalprecht.translate', 'sn.skrollr'])
         }
       });
 
-      $http.get($scope.getAll)
+      $http.get('view1/dataExample.json')
         .success(function(data){
           $scope.response = data;
         })
@@ -39,7 +39,7 @@ angular.module('myApp.view1', ['pascalprecht.translate', 'sn.skrollr'])
           $scope.getAll = "https://gateway.marvel.com:443/v1/public/characters?limit=10&offset="+$scope.offset+"&apikey=25edc4d33b05ade4e5234c3f22ede54b"
         }
 
-        $http.get($scope.getAll)
+        $http.get('view1/dataExample.json')
           .success(function(data){
             $scope.response = data;
           })
